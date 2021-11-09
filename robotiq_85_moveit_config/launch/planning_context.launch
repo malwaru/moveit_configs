@@ -6,7 +6,10 @@
   <arg name="robot_description" default="robot_description"/>
 
   <!-- Load universal robot description format (URDF) -->
-  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro '$(find robotiq_85_description)/urdf/robotiq_85_gripper.xacro'"/>
+  <!-- <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro '$(find robotiq_85_description)/urdf/robotiq_85_gripper.xacro'"/> -->
+  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro '$(find custom_desciption)/urdf/ur5_robotiq/ur5_robotiq.xacro'"/>
+
+   
   <!-- <param if="$(arg load_robot_description)" name="$(arg robot_description)" textfile="$(find robotiq_85_description)/urdf/robotiq_85_gripper.xacro"/> -->
 
 
